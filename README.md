@@ -1,6 +1,6 @@
 # Railway-Management-System-using-MySQL
 ---------
-:FOLDERS:
+:FOLDERS: *Delete the ENV Folder*
 _________
 
 /Assets : Contains the data that is to be inserted in the MySQL tables in csv format
