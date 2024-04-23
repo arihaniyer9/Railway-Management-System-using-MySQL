@@ -16,8 +16,8 @@ def InsertDataTrain():
     """
 
     mn = con.connect(host="localhost",
-                     user=YOUR_USERNAME,
-                     password=YOUR_PASSWORD,
+                     user="root",
+                     password="archangel9",
                      database="railway")
 
     cur = mn.cursor()
@@ -25,7 +25,7 @@ def InsertDataTrain():
     # Iterating through all the values and insert's them in the table
     # Replace the path below with the absolute path of the file on your computer
     try:
-        with open(FULL_PATH_TO_THE_CSV_FILE) as csv_data:
+        with open("C:/Users/Hanesh/OneDrive/Desktop/Billing-System-master/Railway System/Assets/Train_details.csv") as csv_data:
             csv_reader = csv.reader(csv_data, delimiter=",")
             for row in csv_reader:
                 cur.execute(
